@@ -1,0 +1,47 @@
+Answers for Lab 3
+-----------------------------------------------
+
+EXERCISE 1
+
+1. Should instance variable interestRate be declared as static? Explain.
+No, because if it is, all will be the same
+
+2. Write the output from the test for class SavingsAccount. 
+SavingsAccount: balance $115.0, interest rate0.15%
+
+
+EXERCISE 2
+
+3. Which method(s) of the class CheckingAccount demonstrate overriding? Which methods demonstrate overloading?
+deposit(double amount), and withdraw(double amount) are overriding methods. There is no overloading
+
+4. Is bacc0 = chacc1 legal? Why?
+Yes, this is legal 
+
+5. Is chacc1 = bacc1 legal? Why?
+no, this is a type mismatch. You cannot convert from BankAccount to CheckingAccount
+
+
+6. On which variables bacc1, chacc1, sacc1 was the invocation to method
+deductFees() valid? Explain.
+only chacc1 was valid as CheckingAccount is a subclass of BankAccount
+
+7. Which compilation error(s) could be fixed through casting? Which one(s)
+could not be fixed? Why?
+sacc1 could not be fixed because it's undefined for the type SavingsAccount and bacc1 could not be fixed because it's undefined for the typeBankAccount
+
+8. Does the program run after commenting out the line causing the compilation 
+error? If the program crashed, why did it crash?
+No, because there is more than one error which is why is crashed
+
+
+
+EXERCISE 3
+
+9. Why does the compiler issue an error message when invoking newAcc.getTransactionCount()? Why does the compiler issue an error message when invoking newAcc.getInterestRate()?
+Because The methods getTransactionCount() and getInterestRate() is undefined for the type BankAccount
+
+10. Can you tell whether in the statement String accountInfo = newAcc.toString(); the
+method toString() being invoked is from the class CheckingAccount or from the class
+SavingsAccount? Explain your answer.
+It depends if the user enter's "c" or "s" as input. If entered "c" then checking, if entered "s" then saving

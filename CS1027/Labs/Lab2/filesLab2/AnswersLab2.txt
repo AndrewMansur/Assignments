@@ -1,0 +1,39 @@
+Answers for Lab 2
+-----------------------------------------------
+
+EXERCISE 1
+
+1. This question refers to variables data1 and data2 in class TestDataTypes. For each one of the following statements indicate whether the comparison will return the value true or false
+
+data1 == data2: true or false? 
+False
+data1.intVar == data2.intVar: true or false? 
+True
+data1.charVar == data2.charVar: true or false? 
+True
+data1.boolVar == data2.boolVar: true or false? 
+True
+data1.doubleVar == dta2.doubleVar: true or false? 
+True
+data1.varA == data2.varA: true or false? 
+False
+data1.varA.numItems == data2.varA.numItems: true or false? 
+True
+data1.varA.arrItems == data2.varA.arrItems: true or false? 
+True
+
+2. How many of your answers to question 1 were incorrect? 
+2
+
+3. Why was the result of the last comparison true, even though arrays are non-primitive types? 
+Because non-primative types are created by the programmer and is not defined by java. Allowing us to compare them
+
+EXERCISE 3
+
+4. What causes the first compilation error? 
+Counter should be a static variable
+
+EXERCISE 4
+
+5. Why does program CountObjects prints a message indicating that only one object was created, even though the program created more than one object of class ClassC?
+

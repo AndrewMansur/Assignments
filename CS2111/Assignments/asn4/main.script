@@ -1,0 +1,27 @@
+Script started on 2023-11-14 22:04:33-05:00 [TERM="xterm-256color" TTY="/dev/pts/36" COLUMNS="174" LINES="47"]
+]0;amansur7@compute:~/courses/cs2211/Asn/asn4[?2004h[amansur7@compute asn4]$ date
+[?2004lTue Nov 14 10:04:44 PM EST 2023
+]0;amansur7@compute:~/courses/cs2211/Asn/asn4[?2004h[amansur7@compute asn4]$ whoami
+[?2004lamansur7
+]0;amansur7@compute:~/courses/cs2211/Asn/asn4[?2004h[amansur7@compute asn4]$ pwd
+[?2004l/home/amansur7/courses/cs2211/Asn/asn4
+]0;amansur7@compute:~/courses/cs2211/Asn/asn4[?2004h[amansur7@compute asn4]$ ./main
+[?2004lEnter the size of the tree node array: `0  10
+Enter key (number and name) or -1 to stop: 1
+Enter name: oxford street
+Enter data: 100
+Enter key (number and name) or -1 to stop: 2
+Enter name: abbery ro     y road
+Enter data: 00  200
+Enter key (number and name) or -1 to stop: 3
+Enter name: baker street
+Enter data: 50  150
+Enter key (number and name) or -1 to stop: -1
+BST Traversal:
+2 abbey road 200
+3 baker street 150
+1 oxford street 100
+]0;amansur7@compute:~/courses/cs2211/Asn/asn4[?2004h[amansur7@compute asn4]$ exit
+[?2004lexit
+
+Script done on 2023-11-14 22:05:41-05:00 [COMMAND_EXIT_CODE="0"]

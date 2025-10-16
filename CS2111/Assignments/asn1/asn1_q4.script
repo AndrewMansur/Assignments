@@ -1,0 +1,14 @@
+Script started on 2023-09-21 15:46:56-04:00 [TERM="xterm-256color" TTY="/dev/pts/30" COLUMNS="123" LINES="47"]
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1[?2004h[amansur7@compute asn1]$ date
+[?2004lThu Sep 21 03:47:12 PM EDT 2023
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1[?2004h[amansur7@compute asn1]$ whoami
+[?2004lamansur7
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1[?2004h[amansur7@compute asn1]$ [7mpwd[27mpwd
+[?2004l/home/amansur7/courses/cs2211/Asn/asn1
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1[?2004h[amansur7@compute asn1]$ [7mgcc -o filename filename.c[27mgcc -o filename filename.caa[K[K[C[1P.c[1P.c[1P.c[1P.c[1P.c[1P.c[1P.c[1P.ca.cs.cn.c1.c[1P asn1.c[1P asn1.c[1P asn1.c[1P asn1.c[1P asn1.c[1P asn1.c[1P asn1.c[1P asn1.ca asn1.cs asn1.cn asn1.c1 asn1.c[C[C[C[C[C[C[C
+[?2004l]0;amansur7@compute:~/courses/cs2211/Asn/asn1[?2004h[amansur7@compute asn1]$ ./assn[K[Kn1
+[?2004lHello, CS2211 2023!
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1[?2004h[amansur7@compute asn1]$ exit
+[?2004lexit
+
+Script done on 2023-09-21 15:48:15-04:00 [COMMAND_EXIT_CODE="0"]

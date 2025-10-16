@@ -1,0 +1,89 @@
+Answers for Lab 6
+-----------------------------------------------
+
+EXERCISE 1
+----------
+
+1.
+a) What do you think would be printed after the first invocation to method1 (Line 43)?
+ABDFG
+b) What do you think would be printed after the second invocation to method1 (Line 48)?
+ABEFG
+c) What do you think would be printed after the third invocation to method1 (Line 53)?
+ABCFG
+2.
+a) Was answer (1 a) incorrect?
+No
+b) Was answer (1 b) incorrect?
+No
+c) Was answer (1 c) incorrect?
+No
+
+After commenting out line 10 and uncommenting line 11:
+3.
+a) What do you think would be printed after the first invocation to method1 (Line 43)?
+ABXCFG
+b) What do you think would be printed after the second invocation to method1 (Line 48)?
+ABXCFG
+c) What do you think would be printed after the third invocation to method1 (Line 53)?
+ABCFG
+
+4. 
+a) Was answer (2 a) incorrect?
+No
+b) Was answer (2 b) incorrect?
+No
+c) Was answer (2 c) incorrect?
+No
+
+After commenting out line 11 and uncommenting line 12:
+5.
+a) What do you think would be printed after the first invocation to method1 (Line 43)?
+ABDFG
+b) What do you think would be printed after the second invocation to method1 (Line 48)?
+ABEFG
+c) What do you think would be printed after the third invocation to method1 (Line 53)?
+ABCFG
+
+6. 
+a) Was answer (3 a) incorrect?
+No
+b) Was answer (3 b) incorrect?
+No
+c) Was answer (3 c) incorrect?
+No
+
+
+
+EXERCISE 2
+----------
+
+7. What is the difference between m1 and m2? Why is one showing a compiler error but not the other?
+The method m1() throws a checked exception which means it must either be caught. But m2() throws an unchecked exception , which does not need to be handled in this way.
+
+8. What is/are the suggested resolution(s) for this compiler error?
+A resolution for this compiler error is to  declare the checked exception MyCheckedException using a throw or using a try-catch block in the calling method.
+
+9. Look at the function calls to m1() and m2() from the main method. Based on the values sent in for the parameter t into these methods, would the exceptions be thrown when executed (assuming it would compile as is)?
+No, in the current implementation, neither MyCheckedException nor MyUncheckedException would be thrown when the methods m1() and m2() are executed.
+
+10. After adding the throws statement to the m1 method signature, why do you think there is a compiler error on Line 16 on the call to m1() from main()?
+After adding the throws statement to the m1 method, the method is indicating that it may throw a checked exception MyCheckedException. So, any method that calls m1 is required to handle or declare this exception.
+
+11. Why does "Bottom of m1" get printed in m1(15), but "Bottom of m2" does not get printed in m2(15)?
+The reason Bottom of m1 gets printed in m1(15) but Bottom of m2 does not get printed in m2(15) is because m1() throws a checked exception, which must be either caught, whereas m2() throws an unchecked exception.
+
+
+EXERCISE 3
+----------
+
+12. Why are there compiler errors in ArrayStack? What is the suggested resolution for this compiler error?
+Because some of the methods in the StackADT  are not implemented. The  resolution for this  error is to add the missing methods to the ArrayStack class .
+
+13. Are there any methods in ArrayStack that are not included in the StackADT? Should this method be included in the ADT?
+The method in ArrayStack is expandCapacity(). This method should not be included in the ADT, as it  should not be exposed to users of the StackADT interface.
+
+14. Why does LinkedStack NOT contain a compiler error even though some methods are not implemented?
+LinkedStack does not contain a compiler error even though some methods are not implemented because all the methods in the StackADT interface are already implemented in the because of inheritance.
+
+

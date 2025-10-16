@@ -1,0 +1,63 @@
+Answer the following questions.
+
+EXERCISE 1
+----------
+
+1. Which suggestion made by Eclipse to fix the error in line 16 makes sense?
+To make the variables static
+
+2. What is the error in line 21?
+Missing a closed quotation mark
+
+3. What line caused the program to crash?
+The for loop in line 17
+
+Why does the program crash?
+Because there is an ArrayIndexOutOfBoundsException error
+
+4. What do you think the program is going to print?
+i = 10
+i = 3 arr[0] = 0 arr[1] = 0 arr[2] = 0
+
+EXERCISE 2
+----------
+
+5. Which line of the program causes it to crash?
+line 8
+
+6. Why did the value of testArray[0][0] not change?
+because j is only incremented after the inner loop has done a full iteration, the first time the inner loop is executed, j is equal to 0
+
+EXERCISE 3
+----------
+
+7. Which line of the program causes it to crash?
+Line 10 causes the program to crash because you divide by zero
+
+8. Which line is highlighted after pressing F6?
+line 10
+
+9. What is the difference between F6 (Step over) and F5 (Step into)?
+Step over will  execute the current line of code and move to the next line, while step into will go inside a method or function and execute each line of code one by one
+
+10. Why does the program crashes if you press F6 again?
+Because you divide by zero
+
+
+EXERCISE 4
+----------
+
+11. Why the compiler shows an error even though i has been declared in the loop: for (int i = 1; i < 2; ++i)?
+Because it is out of the scope of the brackets. To use i it must be in the for loop
+
+12. What do you think will be the values of variables var1 and the String in obj1 immediately after method2(obj1) is executed?
+Value of var1 should be -20 and the string should be "joe' after method2 is executed
+
+What do you think will be the values of variables var1 and the String in obj1 immediately after method1(obj1) is executed?
+Value of var1 should be 10 and the string should be "joe' after method2 is executed
+
+13. What are the correct values of variables var1 and the String in obj1 immediately after method2(obj1) is executed?
+Value of var1 should be -20 and the string should be "joe' after method2 is executed
+
+14. Why is the result of the comparison (obj1 == obj2) false even though both obj1 and obj2 contain the same information, namely "joe"? 
+Because they compare the references of the object, not the contents

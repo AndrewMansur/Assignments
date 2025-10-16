@@ -1,0 +1,144 @@
+Script started on 2023-10-06 23:47:21-04:00 [TERM="xterm-256color" TTY="/dev/pts/12" COLUMNS="174" LINES="47"]
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ ./converter
+[?2004l1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+date
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ who[K[K[K0
+[?2004lbash: 0: command not found
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ date
+[?2004lFri Oct  6 11:47:50 PM EDT 2023
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ whoami
+[?2004lamansur7
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ pwd
+[?2004l/home/amansur7/courses/cs2211/Asn/asn2
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ ./converter.sc[K[K[K
+[?2004l1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+1
+C for conversion from Celsius to Fahrenheit
+F for conversion from Fahrenheit to Celsius
+C
+Input the temperature: 35.6
+Fahrenheit is: 96.080002
+1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+1
+C for conversion from Celsius to Fahrenheit
+F for conversion from Fahrenheit to Celsius
+F
+Input the temperature: 55.5
+Celsius: 13.055555
+1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+2
+C for conversion from Centimetre to Inch
+I for conversion from Inch to Centimetre
+C
+Input the Length: 15.5
+Inches is: 6.102362
+1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+2
+C for conversion from Centimetre to Inch
+I for conversion from Inch to Centimetre
+I
+Input the Length: 69.42
+Centimetres is: 176.326797
+1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+3
+K for conversion from Kilometer to Miles
+M for conversion from Mile to Kilometer
+K
+Input the Distance: 1 72.4
+Miles is: 44.996895
+1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+3
+K for conversion from Kilometer to Miles
+M for conversion from Mile to Kilometer
+M
+Input the Distance: 45.6
+Kilometers is: 73.370399
+1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+4
+G for conversion from Gallon to Liter
+L for conversion from Liter to Galllon
+G
+Input the Volume: 15.6
+Liters is: 59.046001
+1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+4
+G for conversion from Gallon to Liter
+L for conversion from Liter to Galllon
+L
+Input the Volume: 69.420
+Gallons is: 18.340818
+1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+1
+C for conversion from Celsius to Fahrenheit
+F for conversion from Fahrenheit to Celsius
+H
+C for conversion from Celsius to Fahrenheit
+F for conversion from Fahrenheit to Celsius
+N
+C for conversion from Celsius to Fahrenheit
+F for conversion from Fahrenheit to Celsius
+C
+Input the temperature: 15.5
+Fahrenheit is: 59.900002
+1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+8
+1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+15
+1 for conversion between Celsius and Fahrenheit
+2 for conversion between Centimeter and Inch
+3 for conversion between Kilometer and Mile
+4 for conversion between Gallon and Liter
+0 for quit
+0
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ EXIT[K[K[K[Kexit
+[?2004lexit
+
+Script done on 2023-10-06 23:49:29-04:00 [COMMAND_EXIT_CODE="0"]

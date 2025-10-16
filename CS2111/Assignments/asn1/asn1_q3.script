@@ -1,0 +1,33 @@
+Script started on 2023-09-21 15:50:35-04:00 [TERM="xterm-256color" TTY="/dev/pts/30" COLUMNS="123" LINES="47"]
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1/q2q3[?2004h[amansur7@compute q2q3]$ date
+[?2004lThu Sep 21 03:50:39 PM EDT 2023
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1/q2q3[?2004h[amansur7@compute q2q3]$ whoami
+[?2004lamansur7
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1/q2q3[?2004h[amansur7@compute q2q3]$ pwd
+[?2004l/home/amansur7/courses/cs2211/Asn/asn1/q2q3
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1/q2q3[?2004h[amansur7@compute q2q3]$ [7m/usr/bin/ls df2 df1 tf2 tf1[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/usr/bin/ls df2 df1 tf2 tf1
+[?2004ltf1  tf2
+
+df1:
+df1.txt
+
+df2:
+tf1
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1/q2q3[?2004h[amansur7@compute q2q3]$ [7mls -l[27mls -l
+[?2004ltotal 3
+-rw-r--r-- 1 amansur7 amansur7 0 Sep 21 15:50 asn1_q3.script
+drwxr-xr-x 2 amansur7 amansur7 3 Sep 21 14:33 [0m[01;34mdf1[0m
+drwxr-xr-x 3 amansur7 amansur7 3 Sep 21 14:33 [01;34mdf2[0m
+-rw-r--r-- 1 amansur7 amansur7 0 Sep 21 15:32 tf1
+-rw-r--r-- 1 amansur7 amansur7 0 Sep 21 12:21 tf2
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1/q2q3[?2004h[amansur7@compute q2q3]$ [7m/usr/bin/ls -ld df1 df2[27m/usr/bin/ls -ld df1 df2
+[?2004ldrwxr-xr-x 2 amansur7 amansur7 3 Sep 21 14:33 df1
+drwxr-xr-x 3 amansur7 amansur7 3 Sep 21 14:33 df2
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1/q2q3[?2004h[amansur7@compute q2q3]$ [7m/usr/bin/ls[27m/usr/bin/ls
+[?2004lasn1_q3.script	df1  df2  tf1  tf2
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1/q2q3[?2004h[amansur7@compute q2q3]$ [7m/usr/bin/ls .[27m/usr/bin/ls .
+[?2004lasn1_q3.script	df1  df2  tf1  tf2
+]0;amansur7@compute:~/courses/cs2211/Asn/asn1/q2q3[?2004h[amansur7@compute q2q3]$ exit
+[?2004lexit
+
+Script done on 2023-09-21 15:52:00-04:00 [COMMAND_EXIT_CODE="0"]

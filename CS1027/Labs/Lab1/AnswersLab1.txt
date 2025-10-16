@@ -1,0 +1,26 @@
+Answers for Lab 1
+------------------
+EXERCISE 2
+1. What do you think is the information that System.out.println(p1) prints on the screen?
+This could be the location of the p1 object stored in memory
+
+EXERCISE 3
+2. How many lines of text are printed? 
+4
+
+EXERCISE 4
+3. How many error messages are printed by the compiler when javac is invoked for the first time?
+4
+
+4. After deleting the extra character in line 16, what is the error that the compiler finds?
+The declared package "" does not match the expected package "SocialNetworking"
+
+5. How many bits are printed by the program?
+00110111
+8 bits
+
+EXERCISE 5
+
+4. Which class is displayed on the browser?
+
+

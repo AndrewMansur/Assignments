@@ -1,0 +1,34 @@
+Answers for Lab 8
+-----------------------------------------------
+
+EXERCISE 1
+
+1. What is the type of Exception being thrown? Why is this occurring?
+The type of exception being thrown is NullPointerException. It is being thrown because the array arrayOrderedList is not initialized
+
+
+2. After adding the "implements Comparable<Card>" into the class definition, why is there now a compiler-error?
+We get a compiler error because the method compareTo has not yet been implemented in our card class
+
+
+EXERCISE 2
+
+3. After multiplying the return value by -1 in compareByName(), how are the names being sorted? Why is this happening?
+After multiplying the return value by -1 the names are then being sorted in reverse. This happenes because multiplying the value by -1 reverses the resuly of the comparison. Because multiplying a positive number times -1 gives a negative number.
+
+
+EXERCISE 3
+
+4. Why is the list of cities being shown in this order initially?
+Because compareTo() initally returns 0 so they are all equal when cities are compared, making it keep the order.
+
+
+5.
+a) Initially, does the order in which the cities are added to the list affect the order in which they are stored in the list?
+yes, because the CompareTo() Method always returns 0 so all cities are equal
+
+
+b) After completing compareTo(), does the order in which the cities are added to the list affect the order in which they are stored in the list?
+No, because the compareTo() method to keep the sorted order of the list and now compares cities on name and population 
+
+

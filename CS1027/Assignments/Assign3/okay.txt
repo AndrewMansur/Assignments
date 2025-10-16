@@ -1,0 +1,62 @@
+  private Dungeon dungeon;
+    private int numChambersInPath;
+
+    public FindShortestPath(String dungeonFileName) throws Exception {
+        dungeon = new Dungeon(dungeonFileName);
+        numChambersInPath = 0;
+    }
+
+    private void findShortestPath() {
+        Hexagon start = dungeon.getStart();
+        Hexagon exit = dungeon.getExit();
+        PriorityQueue<Hexagon> queue = new DLPriorityQueue<>();
+
+        // Initialize start chamber
+        start.setDistanceToStart(0);
+        start.setPriority(start.getDistanceToExit());
+        queue.enqueue(start);
+
+        // Process chambers until exit is found or queue is empty
+        while (!queue.isEmpty()) {
+            Hexagon current = queue.dequeue();
+
+            if (current.equals(exit)) {
+                // Path found, set numChambersInPath and exit loop
+                numChambersInPath = current.getDistanceToStart();
+                break;
+            }
+
+            for (Hexagon neighbor : current.getNeighbors()) {
+                if (neighbor.isPassable() && !neighbor.isAdjacentToDragon()) {
+                    double distanceToNeighbor = current.getDistanceToStart() + 1;
+                    if (distanceToNeighbor < neighbor.getDistanceToStart()) {
+                        neighbor.setDistanceToStart(distanceToNeighbor);
+                        neighbor.setPriority(distanceToNeighbor + neighbor.getDistanceToExit());
+                        neighbor.setPredecessor(current);
+                        queue.enqueue(neighbor);
+                    }
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            if (args.length < 1) {
+                throw new Exception("No input file specified");
+            }
+
+            String dungeonFileName = args[0];
+            FindShortestPath shortestPath = new FindShortestPath(dungeonFileName);
+            shortestPath.findShortestPath();
+
+            if (shortestPath.numChambersInPath == 0) {
+                System.out.println("No path found");
+            } else {
+                System.out.printf("Path of length %d found%n", shortestPath.numChambersInPath);
+            }
+        } catch (Exception e) {
+            System.out.printf("Error: %s%n", e.getMessage());
+        }
+    }
+}

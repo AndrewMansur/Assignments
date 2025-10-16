@@ -1,0 +1,24 @@
+Script started on 2023-12-06 19:45:55-05:00 [TERM="xterm-256color" TTY="/dev/pts/22" COLUMNS="138" LINES="70"]
+]0;amansur7@compute:~/courses/cs2211/Asn/asn5[?2004h[amansur7@compute asn5]$ vi datatype.c[2Pbstree.cls[Kmake cleanls[K./mymatrix < input.txt
+[?2004lNumber Street Occurrence
+4 4 Oaks Crescent 1
+8 3 Valleys Place 1
+10 Abbott Street 3
+36 Beechbank Crescent 1
+36 Beechmount Crescent 1
+46 Oxford Street 1
+70 Oxford Street 7
+74 3rd Street 1
+100 1st Street 1
+101 Western Road 3
+204 Beech Drive 1
+]0;amansur7@compute:~/courses/cs2211/Asn/asn5[?2004h[amansur7@compute asn5]$ date
+[?2004lWed Dec  6 07:46:06 PM EST 2023
+]0;amansur7@compute:~/courses/cs2211/Asn/asn5[?2004h[amansur7@compute asn5]$ whoami
+[?2004lamansur7
+]0;amansur7@compute:~/courses/cs2211/Asn/asn5[?2004h[amansur7@compute asn5]$ pwd
+[?2004l/home/amansur7/courses/cs2211/Asn/asn5
+]0;amansur7@compute:~/courses/cs2211/Asn/asn5[?2004h[amansur7@compute asn5]$ exit
+[?2004lexit
+
+Script done on 2023-12-06 19:46:15-05:00 [COMMAND_EXIT_CODE="0"]

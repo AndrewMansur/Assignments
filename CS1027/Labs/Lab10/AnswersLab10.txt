@@ -1,0 +1,43 @@
+Answers for Lab 10
+-----------------------------------------------
+
+EXERCISE 1
+
+1. What should the return type be in each of the following methods?
+
+getData() --> T
+getLeft() --> BinaryTreeNode<T>
+getRight() --> BinaryTreeNode<T>
+
+
+
+2. What should the parameter type be in each of the following methods?
+
+setData() --> T
+setLeft() --> BinaryTreeNode<T>
+setRight() --> BinaryTreeNode<T>
+
+
+
+3. What would need to be added/removed/changed to make this class work for a more general tree such that each node could have more than 2 nodes?
+To store more than 2 nodes adjust the left and right children to store multiple nodes in a list
+
+
+EXERCISE 2
+
+4. What is the base case of the size() method? What are the recursive cases?
+size(r.getLeft()) + size(r.getRight())
+
+
+5. What is the main difference between the 3 methods: inorder(), preorder(), and postorder()?
+The main difference between the 3 methods is the order in which the nodes are visited while the binary tree is beng traversed
+
+
+6. In the recFormatTree() method, what is the space parameter used for? What is the default value when this method is first called? What is being concatenated to this space value in the recursive calls? Does this make sense for how the tree is being displayed?
+The spacce parameter is used to format the tree when in string represention. The default vale is empty string " ". A tab escape character \t is used to organize the binary tree. This makes sense because it gives us a clear view of it being displayed.
+
+
+EXERCISE 3
+
+7. How can you tell if a given node is a leaf node?
+you can tell its a leaf node if the both of its left and right children are both null

@@ -1,0 +1,30 @@
+Script started on 2023-10-06 23:49:49-04:00 [TERM="xterm-256color" TTY="/dev/pts/12" COLUMNS="174" LINES="47"]
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ date
+[?2004lFri Oct  6 11:49:50 PM EDT 2023
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ whoami
+[?2004lamansur7
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ pwd
+[?2004l/home/amansur7/courses/cs2211/Asn/asn2
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ ./[7mpower2_calculator[27mpower2_calculator
+[?2004lenter the exponent: 1
+2^1 = 2
+enter the exponent: 4
+2^4 = 16
+enter the exponent: 5
+2^5 = 32
+enter the exponent: 40
+2^40 = 1099511627776
+enter the exponent: 55
+2^55 = 36028797018963968
+enter the exponent: 69
+2^69 = 0
+enter the exponent: 3
+2^3 = 8
+enter the exponent: 5
+2^5 = 32
+enter the exponent: 0
+2^0 = 1
+]0;amansur7@compute:~/courses/cs2211/Asn/asn2[?2004h[amansur7@compute asn2]$ exit
+[?2004lexit
+
+Script done on 2023-10-06 23:50:19-04:00 [COMMAND_EXIT_CODE="0"]

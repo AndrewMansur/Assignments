@@ -1,0 +1,27 @@
+Script started on 2023-10-20 23:46:51-04:00 [TERM="xterm-256color" TTY="/dev/pts/20" COLUMNS="129" LINES="47"]
+]0;amansur7@compute:~/courses/cs2211/Asn/asn3[?2004h[amansur7@compute asn3]$ who[K[K[Kdate
+[?2004lFri Oct 20 11:46:57 PM EDT 2023
+]0;amansur7@compute:~/courses/cs2211/Asn/asn3[?2004h[amansur7@compute asn3]$ whoami
+[?2004lamansur7
+]0;amansur7@compute:~/courses/cs2211/Asn/asn3[?2004h[amansur7@compute asn3]$ pwd
+[?2004l/home/amansur7/courses/cs2211/Asn/asn3
+]0;amansur7@compute:~/courses/cs2211/Asn/asn3[?2004h[amansur7@compute asn3]$ ./ss_integer
+[?2004lEnter an integer: 2345
+ _   _       _  
+ _|  _| |_| |_  
+|_   _|  |   _| 
+Do you want to continue? (Y/N): y
+Enter an integer: 2
+ _  
+ _| 
+|_  
+Do you want to continue? (Y/N): 3 y
+Enter an integer: 43
+     _  
+|_|  _| 
+ |   _| 
+Do you want to continue? (Y/N): n
+]0;amansur7@compute:~/courses/cs2211/Asn/asn3[?2004h[amansur7@compute asn3]$ exit
+[?2004lexit
+
+Script done on 2023-10-20 23:47:30-04:00 [COMMAND_EXIT_CODE="0"]

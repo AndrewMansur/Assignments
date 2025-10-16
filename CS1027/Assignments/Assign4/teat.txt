@@ -1,0 +1,78 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Stack;
+
+public class FileStructure {
+    private NLNode<FileObject> root;
+
+    public FileStructure(String fileObjectName) throws FileObjectException {
+        FileObject fileObject = new FileObject(fileObjectName);
+        root = new NLNode<FileObject>(fileObject, null);
+
+        buildFileStructureRecursively(root);
+    }
+
+    private void buildFileStructureRecursively(NLNode<FileObject> node) throws FileObjectException {
+        FileObject fileObject = node.getData();
+
+        if (fileObject.isDirectory()) {
+            Iterator<FileObject> iterator = fileObject.directoryFiles();
+
+            while (iterator.hasNext()) {
+                FileObject childFileObject = iterator.next();
+                NLNode<FileObject> childNode = new NLNode<FileObject>(childFileObject, node);
+                node.addChild(childNode);
+                buildFileStructureRecursively(childNode);
+            }
+        }
+    }
+
+    public NLNode<FileObject> getRoot() {
+        return root;
+    }
+
+    public Iterator<String> filesOfType(String type) {
+        ArrayList<String> files = new ArrayList<>();
+        filesOfTypeRecursive(root, type, files);
+        return files.iterator();
+    }
+
+    private void filesOfTypeRecursive(NLNode<FileObject> node, String type, ArrayList<String> files) {
+        Iterator<NLNode<FileObject>> iterator = node.getChildren();
+
+        while (iterator.hasNext()) {
+            NLNode<FileObject> childNode = iterator.next();
+            FileObject fileObject = childNode.getData();
+
+            if (fileObject.isFile() && fileObject.getLongName().endsWith(type)) {
+                files.add(fileObject.getLongName());
+            }
+
+            filesOfTypeRecursive(childNode, type, files);
+        }
+    }
+public String findFile(String name) {
+    return findFileIterative(root, name);
+}
+
+private String findFileIterative(NLNode<FileObject> node, String name) {
+    Stack<NLNode<FileObject>> stack = new Stack<>();
+    stack.push(node);
+
+    while (!stack.isEmpty()) {
+        NLNode<FileObject> currentNode = stack.pop();
+        FileObject fileObject = currentNode.getData();
+
+        if (fileObject.getName().equals(name)) {
+            return fileObject.getLongName();
+        }
+
+        Iterator<NLNode<FileObject>> iterator = currentNode.getChildren();
+        while (iterator.hasNext()) {
+            stack.push(iterator.next());
+        }
+    }
+
+    return "";
+}
+}

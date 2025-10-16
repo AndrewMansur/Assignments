@@ -1,0 +1,28 @@
+Answers for Lab 7
+-----------------------------------------------
+
+EXERCISE 1
+
+1. Which methods in the LinkedQueue class are taking in a parameter of the generic type T?
+enqueue
+
+
+2. Which methods in the LinkedQueue class have a return type of the generic type T?
+first, dequeue
+
+
+3. Suppose you didn't have an instance variable storing the current number of elements in the queue. How could you determine the number of elements for the size() method if such an instance variable was not available?
+iterate through each node and increment a counter variable until the end of the queue is reached
+
+
+EXERCISE 2
+
+4. Consider the possibility of using an Array Queue or a Circular Array Queue instead of the Linked Queue being used in this simulation. Would the simulation's results be impacted by switching to a different Queue implementation?
+the impact on the simulation's results would probably be unnoitable as long as the queue implementation is functioning correctly and does not havev any bugs or errors in the snails movement. The snails movement pattern and race length remain the same, regardless of the queue implementation used to store the movement pattern.
+
+
+5. Which of these classes/methods would you have to modify if you were going to use one of the other queue implementations?
+At a small scale, both array queue and circular array queue will both be suitable. However, if the size of the queue were to grow then a circular array queue would be a better because its ability to grow dynamically.
+
+
+

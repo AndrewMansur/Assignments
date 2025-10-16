@@ -1,0 +1,14 @@
+Script started on 2023-11-14 22:07:57-05:00 [TERM="xterm-256color" TTY="/dev/pts/36" COLUMNS="174" LINES="47"]
+]0;amansur7@compute:~/courses/cs2211/Asn/asn4[?2004h[amansur7@compute asn4]$ whoami[K[K[K[K[K[Kdate
+[?2004lTue Nov 14 10:08:06 PM EST 2023
+]0;amansur7@compute:~/courses/cs2211/Asn/asn4[?2004h[amansur7@compute asn4]$ whoami
+[?2004lamansur7
+]0;amansur7@compute:~/courses/cs2211/Asn/asn4[?2004h[amansur7@compute asn4]$ pwd
+[?2004l/home/amansur7/courses/cs2211/Asn/asn4
+]0;amansur7@compute:~/courses/cs2211/Asn/asn4[?2004h[amansur7@compute asn4]$ ./euler
+[?2004lEnter a small number: 0.000001   1
+Approximated value of e: 2.718253968253968
+]0;amansur7@compute:~/courses/cs2211/Asn/asn4[?2004h[amansur7@compute asn4]$ exit
+[?2004lexit
+
+Script done on 2023-11-14 22:08:23-05:00 [COMMAND_EXIT_CODE="0"]

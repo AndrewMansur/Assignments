@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Big-Circle" serif:id="Big Circle" transform="matrix(1,0,0,1,0,-5)">
+        <circle cx="151" cy="155" r="145" style="fill:rgb(108,185,255);"/>
+    </g>
+    <g transform="matrix(1.08,0,0,1.08,-9.32,-17.4)">
+        <path d="M154,30C85.011,30 29,86.011 29,155C29,223.989 85.011,280 154,280C133.303,250.833 116.5,204.863 116.5,155C116.5,105.137 133.303,59.167 154,30Z" style="fill:rgb(0,107,196);"/>
+    </g>
+    <g id="Purple-Circle-Top" serif:id="Purple Circle Top" transform="matrix(1,0,0,1,7,-7)">
+        <circle cx="207" cy="99" r="21" style="fill:rgb(100,0,150);"/>
+    </g>
+    <g id="Purple-Circle-Top1" serif:id="Purple Circle Top" transform="matrix(1,0,0,1,6,103)">
+        <circle cx="207" cy="99" r="21" style="fill:rgb(100,0,150);"/>
+    </g>
+    <g id="Yellow-Middle-Circle" serif:id="Yellow Middle Circle" transform="matrix(1.42857,0,0,1.42857,-80.7143,5.57143)">
+        <circle cx="207" cy="99" r="21" style="fill:rgb(255,245,39);"/>
+    </g>
+</svg>

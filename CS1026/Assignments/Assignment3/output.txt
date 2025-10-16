@@ -1,0 +1,9 @@
+Total number of universities =>100
+Available countries =>Jordan,Palestine,Australia,Canada,China,Denmark,France,Germany,Israel,Japan,Netherlands,Norway,Singapore,South Korea,Sweden,Switzerland,Taiwan,United Kingdom,USA,Egypt,
+Available continents =>Asia,Australia,North America,Europe,Africa,
+At international rank =>24 the university name is =>University of Toronto
+At national rank =>1 the university name is =>University of Toronto
+The average score =>85.47%
+The relative score to the top university in North America is => (averageScore / topContinentScore) x 100% = 85.47%
+The capital is => Ottawa
+The universities that contain the capital name =>

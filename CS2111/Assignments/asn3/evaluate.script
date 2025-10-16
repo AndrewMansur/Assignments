@@ -1,0 +1,15 @@
+Script started on 2023-10-20 23:46:06-04:00 [TERM="xterm-256color" TTY="/dev/pts/20" COLUMNS="129" LINES="47"]
+]0;amansur7@compute:~/courses/cs2211/Asn/asn3[?2004h[amansur7@compute asn3]$ date
+[?2004lFri Oct 20 11:46:09 PM EDT 2023
+]0;amansur7@compute:~/courses/cs2211/Asn/asn3[?2004h[amansur7@compute asn3]$ whoami
+[?2004lamansur7
+]0;amansur7@compute:~/courses/cs2211/Asn/asn3[?2004h[amansur7@compute asn3]$ pwd
+[?2004l/home/amansur7/courses/cs2211/Asn/asn3
+]0;amansur7@compute:~/courses/cs2211/Asn/asn3[?2004h[amansur7@compute asn3]$ ./evaluate
+[?2004lEnter a simple arithmetic expression: 2+2+4-2 - 1
+The final answer is: 5.000000
+Do you want to continue? (Y/N): n
+]0;amansur7@compute:~/courses/cs2211/Asn/asn3[?2004h[amansur7@compute asn3]$ exit
+[?2004lexit
+
+Script done on 2023-10-20 23:46:31-04:00 [COMMAND_EXIT_CODE="0"]

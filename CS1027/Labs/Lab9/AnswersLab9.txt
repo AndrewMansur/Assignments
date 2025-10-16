@@ -1,0 +1,44 @@
+Answers for Lab 9
+-----------------------------------------------
+
+EXERCISE 1
+
+1. Why do the iterative methods require so many variables? What are the base cases of the recursive methods?
+Iterative methods have that many variables because you need to keep track of many different factors like the iterative count and the product where in the recursive method you dont need to
+
+
+2. Write down the running time printed out to the console for each of the following inputs:
+
+Factorial(5): 1, 5
+Factorial(10): 1, 10
+Factorial(20): 1, 20
+Factorial(40): 1, 40
+
+Fibonacci(5): 1, 9 
+Fibonacci(10): 1, 109
+Fibonacci(20): 1, 13529
+Fibonacci(40): 1, 204668309
+
+3. What is the value of methodCalls2 (calls to rfib(2)) when n=40?
+63245986
+
+
+4. Why is the recursive algorithm for computing Fibonacci numbers so slow compared to the iterative algorithm? Does the value of methodCalls2 make sense with this rationale?
+Because the function is constantly getting called and the number of calls is growing exponentitally. This can be seen with the value of methodCalls2.
+
+
+
+
+EXERCISE 3
+
+5. How many activation records are there in the execution stack?
+2
+
+
+6. Write the values of 
+param1 =1
+local1 = 1
+i = 1
+
+7. How did the execution stack change after you pressed F6 twice?
+After clicking F6 twice, the method m1 was no longer in the stack because we are now out of the scope

@@ -1,0 +1,40 @@
+Answers for Lab 3
+-----------------------------------------------
+
+EXERCISE 1
+
+The exercise demonstrated a generic printer class. This example sent the wrapper class for primitives like integers, double values and terminated character arrays.
+Would the GenericPrinter class work on user created classes like Person?
+If so, then what would be printed out if the Person class did not have a toString method defined?
+
+Yes, the GenericPrinter class would work on user-created classes like Person. The GenericPrinter class can print any object that overrides the toString() method of the Object class, which is inherited by all Java classes.
+
+EXERCISE 2
+
+Write out your answer to the question 7. D.):
+the number of swaps needed to correctly reverse an array is count/2
+
+How many swaps must be made to correctly reverse the array?
+to reverse an array using swaps, we need to make  n/2 swaps
+
+Would the code been more or less efficient if you used a second array and just copied the connects of each element into their new position (i.e. original_array[0] to new_array[n], original_array[1] to new_array[n-1], original_array[2] to new_array[n-2], etc.) ?
+in terms of both time and space complexity, swapping elements within the original array would likely be more efficient than copying elements into a new array.
+
+Explain your conclusion (why or why not).
+The reason for this is that copying each element of the original array into a new array requires iterating through the entire original array once to copy its elements, and then iterating through the new array once to print its elements in the reversed order. This takes up much more time and space
+
+EXERCISE 3
+
+You were instructed to change the code to be more generic and to operate with any number of nodes, but were told that:
+You cannot change the method signature (parameters). You also cannot add instance variables to the class.
+If you were allowed to do this, what new instance variable would you add and to which class would you add this new instance variable?
+
+If I were allowed to add a new instance variable, I would add a size variable to the BuildLinkedList class to keep track of the number of nodes in the linked list
+
+EXERCISE 4
+
+In this exercise you were given a new class called DoubleLinkedNode. This class was different from the class used in Exercise 3 above.
+Could the class DoubleLinkedNode from this exercise be used in Exercise three in place of LinearNode without any other changes to the code in Exercise 3? (i.e ONLY: Search/Replace LinearNode with DoubleLinkedNode in the BuildLinkedList class.)
+If not, what other code would have to be changed?
+
+No because DoubleLinkedNode has an additional  variable prev, which is a reference to the previous node in the list. So inserting and deleting nodes in the list would need to be updated to account for the new prev variable
