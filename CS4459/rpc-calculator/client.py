@@ -45,11 +45,14 @@ def add(stub, a, b):
         Result: The operation result
     """
     request = calculator_pb2.BinaryOperation(a=float(a), b=float(b))
-    
-    # We use the timeout constant as required
-    response = stub.Add(request, timeout=DEFAULT_TIMEOUT)
-    
-    return response.value
+    try:
+        response = stub.Add(request, timeout=DEFAULT_TIMEOUT)
+        return response.value
+    except grpc.RpcError as e:
+        if e.code() == grpc.StatusCode.DEADLINE_EXCEEDED:
+            print(f"TIMEOUT in add({a}, {b}): {DEFAULT_TIMEOUT}s exceeded")
+            # logger.warning(f"Timeout in add({a},{b})")  # alternative
+        raise  # let caller handle or fail test
 
 def subtract(stub, a, b):
     """
@@ -57,9 +60,13 @@ def subtract(stub, a, b):
     Note: No retry logic needed - fail immediately on errors.
     """
     request = calculator_pb2.BinaryOperation(a=float(a), b=float(b))
-    response = stub.Subtract(request, timeout=DEFAULT_TIMEOUT)
-
-    return response.value
+    try:
+        response = stub.Subtract(request, timeout=DEFAULT_TIMEOUT)
+        return response.value
+    except grpc.RpcError as e:
+        if e.code() == grpc.StatusCode.DEADLINE_EXCEEDED:
+            print(f"TIMEOUT in subtract({a}, {b}): {DEFAULT_TIMEOUT}s exceeded")
+        raise
 
 def multiply(stub, a, b):
     """
@@ -67,9 +74,13 @@ def multiply(stub, a, b):
     Note: No retry logic needed - fail immediately on errors.
     """
     request = calculator_pb2.BinaryOperation(a=float(a), b=float(b))
-    response = stub.Multiply(request, timeout=DEFAULT_TIMEOUT)
-
-    return response.value
+    try:
+        response = stub.Multiply(request, timeout=DEFAULT_TIMEOUT)
+        return response.value
+    except grpc.RpcError as e:
+        if e.code() == grpc.StatusCode.DEADLINE_EXCEEDED:
+            print(f"TIMEOUT in multiply({a}, {b}): {DEFAULT_TIMEOUT}s exceeded")
+        raise
 
 def divide(stub, a, b):
     """
@@ -102,13 +113,14 @@ def divide(stub, a, b):
         grpc.StatusCode.DEADLINE_EXCEEDED
     }
 
-    for attempt in range(MAX_RETRIES + 1):  # 0 to 3 → 4 total attempts
+    for attempt in range(MAX_RETRIES + 1):  
         try:
             response = stub.Divide(
                 request,
                 timeout=DEFAULT_TIMEOUT
             )
-            return response.value   # success → return the float
+            # success, return the float
+            return response.value   
 
         except grpc.RpcError as e:
             code = e.code()
@@ -118,28 +130,57 @@ def divide(stub, a, b):
                 return "INVALID_ARGUMENT"
 
             if code not in retryable_codes:
-                # Any other error (e.g. INTERNAL, OUT_OF_RANGE) → fail immediately
-                raise  # or return some generic error string - raise is fine
+                # Any other error 
+                raise  
 
-            # If this was the last attempt → return specific error string
+            # If this was the last attempt, return specific error string
             if attempt == MAX_RETRIES:
                 if code == grpc.StatusCode.UNAVAILABLE:
                     return "SERVER_UNAVAILABLE"
                 if code == grpc.StatusCode.DEADLINE_EXCEEDED:
                     return "TIMEOUT_EXCEEDED"
 
-            # Exponential backoff before next retry
-            # attempt 0 → wait 0.5s, attempt 1 → 1s, attempt 2 → 2s
-            backoff = (2 ** attempt) * 0.5
+
+            backoff = (2 ** attempt) + random.uniform(0, 1)
+            timestamp = datetime.now().strftime("%H:%M:%S.%f")[:-3]
+            print(f"[{timestamp}] Retry {attempt + 1}/{MAX_RETRIES} for divide({a}, {b}) "
+                  f"after {code.name} - waiting {backoff:.2f}s")
             time.sleep(backoff)
 
 def main():
     """Main function to test the calculator."""
-    # TODO: Create stub using create_client_stub()
-    # TODO: Test each operation
-    # Example: result = add(stub, 10, 5)
-    # TODO: Print results
-    pass
+    stub = create_client_stub()
+
+    print("=== Testing Calculator Operations ===\n")
+
+    # Test add
+    try:
+        result = add(stub, 10, 5)
+        print(f"add(10, 5) = {result}")
+    except grpc.RpcError as e:
+        print(f"add(10, 5) FAILED: {e.code().name}")
+
+    # Test subtract
+    try:
+        result = subtract(stub, 10, 5)
+        print(f"subtract(10, 5) = {result}")
+    except grpc.RpcError as e:
+        print(f"subtract(10, 5) FAILED: {e.code().name}")
+
+    # Test multiply
+    try:
+        result = multiply(stub, 10, 5)
+        print(f"multiply(10, 5) = {result}")
+    except grpc.RpcError as e:
+        print(f"multiply(10, 5) FAILED: {e.code().name}")
+
+    # Test divide 
+    result = divide(stub, 10, 5)
+    print(f"divide(10, 5) = {result}")
+
+    # Test divide by zero 
+    result = divide(stub, 10, 0)
+    print(f"divide(10, 0) = {result}")
 
 if __name__ == '__main__':
     main()

@@ -18,17 +18,27 @@ class CalculatorServicer(calculator_pb2_grpc.CalculatorServicer):
         self.wait = wait
 
     def Add(self, request, context):
-        # Part 2: Failure simulation (optional, based on command-line args)
+        """Add two numbers and return the result.
+
+        Args:
+            request: BinaryOperation with fields a and b
+            context: gRPC service context
+        """
         if self.fail:
             context.abort(grpc.StatusCode.UNAVAILABLE, "Simulated server crash")
 
         if self.wait:
-            time.sleep(10)  # Wait 10 seconds (exceeds client timeout)
-
+            time.sleep(10)  # Wait 10 seconds 
         result = request.a + request.b
         return calculator_pb2.Result(value=result)
 
     def Subtract(self, request, context):
+        """Subtract two numbers and return the result.
+
+        Args:
+            request: BinaryOperation with fields a and b
+            context: gRPC service context
+        """
         if self.fail:
             context.abort(grpc.StatusCode.UNAVAILABLE, "Simulated server crash")
         if self.wait:
@@ -38,6 +48,12 @@ class CalculatorServicer(calculator_pb2_grpc.CalculatorServicer):
         return calculator_pb2.Result(value=result)
 
     def Multiply(self, request, context):
+        """Multiply two numbers and return the result.
+
+        Args:
+            request: BinaryOperation with fields a and b
+            context: gRPC service context
+        """
         if self.fail:
             context.abort(grpc.StatusCode.UNAVAILABLE, "Simulated server crash")
         if self.wait:
@@ -47,12 +63,18 @@ class CalculatorServicer(calculator_pb2_grpc.CalculatorServicer):
         return calculator_pb2.Result(value=result)
 
     def Divide(self, request, context):
+        """Divide two numbers and return the result. Aborts with INVALID_ARGUMENT if divisor is zero.
+
+        Args:
+            request: BinaryOperation with fields a and b
+            context: gRPC service context
+        """
         if self.fail:
             context.abort(grpc.StatusCode.UNAVAILABLE, "Simulated server crash")
         if self.wait:
             time.sleep(10)
 
-        if request.b == 0.0:  # Use == 0.0 for floating-point safety
+        if request.b == 0.0:  
             context.abort(grpc.StatusCode.INVALID_ARGUMENT, "Division by zero")
 
         result = request.a / request.b
