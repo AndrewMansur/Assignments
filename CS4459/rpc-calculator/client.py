@@ -1,3 +1,5 @@
+
+
 import grpc
 import sys
 import time
@@ -9,8 +11,8 @@ import calculator_pb2_grpc
 
 
 # Configuration Constants
-DEFAULT_TIMEOUT = 2  # seconds - timeout for each RPC call
-MAX_RETRIES = 3      # maximum number of retry attempts (for divide method only)
+DEFAULT_TIMEOUT = 2  # seconds timeout for each RPC call
+MAX_RETRIES = 3      # max numb of retry attempts
 
 
 def create_client_stub(address='localhost:50051'):
@@ -51,8 +53,7 @@ def add(stub, a, b):
     except grpc.RpcError as e:
         if e.code() == grpc.StatusCode.DEADLINE_EXCEEDED:
             print(f"TIMEOUT in add({a}, {b}): {DEFAULT_TIMEOUT}s exceeded")
-            # logger.warning(f"Timeout in add({a},{b})")  # alternative
-        raise  # let caller handle or fail test
+        raise  
 
 def subtract(stub, a, b):
     """
